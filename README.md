@@ -19,6 +19,8 @@
 	<img src="./res/logo.png" width="200px">
 	<p align="center">🎶 Discord Rich Presence for Cmus written in Nim 🎵</p>
 	<p align="center">
+		<a href="#demo">View Demo</a>
+		.
 		<a href="https://github.com/LordOfTrident/cordmus/issues">Report Bug</a>
 		·
 		<a href="https://github.com/LordOfTrident/cordmus/issues">Request Feature</a>
@@ -30,6 +32,7 @@
 	<summary>Table of contents</summary>
 	<ul>
 		<li><a href="#introduction">Introduction</a></li>
+		<li><a href="#demo">Demo</a></li>
 		<li><a href="#quickstart">Quickstart</a></li>
 		<li><a href="#bugs">Bugs</a></li>
 	</ul>
@@ -38,6 +41,11 @@
 ## Introduction
 A [Discord Rich Presence](https://discord.com/developers/docs/rich-presence/how-to) client for the
 [cmus music player](https://cmus.github.io/) written in [Nim](https://nim-lang.org/).
+
+## Demo
+<p align="center">
+	<img src="./res/demo.png" width="50%">
+</p>
 
 ## Quickstart
 ```
