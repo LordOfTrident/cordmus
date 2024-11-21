@@ -56,6 +56,15 @@ proc format(str: string, song: Song): string =
         .replace("{position}", $(song.position div 60) & ":" & $(song.position mod 60))
         .replace("{paused}",   if song.paused: "⏸" else: "▶")
 
+proc sanitizeQuotes(str: string): string =
+    var flag = false
+    for ch in str:
+        if ch == '"':
+            result &= (if flag: "“" else: "”")
+            flag    = not flag
+        else:
+            result &= ch
+
 proc update(rpc: DiscordRPC, details, state, icon: string,
             timeLeft: bool, remotePath: string): bool =
     let
@@ -73,12 +82,12 @@ proc update(rpc: DiscordRPC, details, state, icon: string,
         timestamps.finish = time - song.position + song.duration + 1
 
     rpc.setActivity Activity(
-        details:    details.format(song),
-        state:      state.format(song),
+        details:    details.format(song).sanitizeQuotes(),
+        state:      state.format(song).sanitizeQuotes(),
         timestamps: timestamps,
         assets:     some ActivityAssets(
             largeImage: icon,
-            largeText: "Listening to " & song.title,
+            largeText: "Listening to " & song.title.sanitizeQuotes(),
         )
     )
     return true
