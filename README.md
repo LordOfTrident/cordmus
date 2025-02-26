@@ -20,7 +20,7 @@
 	<p align="center">🎶 Discord Rich Presence for Cmus written in Nim 🎵</p>
 	<p align="center">
 		<a href="#demo">View Demo</a>
-		.
+		·
 		<a href="https://github.com/LordOfTrident/cordmus/issues">Report Bug</a>
 		·
 		<a href="https://github.com/LordOfTrident/cordmus/issues">Request Feature</a>
