@@ -56,7 +56,7 @@ $ ./cordmus -h
 ```
 
 ## Bugs
-If you find any bugs, please, [create an issue and report them](https://github.com/LordOfTrident/ltl/issues).
+If you find any bugs, please, [create an issue and report them](https://github.com/LordOfTrident/cordmus/issues).
 
 <br>
 <h1></h1>
